@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeText</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="logo">
+        <h3 class="logo-title">💬</h3>
+        <h3 class="logo-title">WeText</h3>
+    </div>
+    
+    <div class="chat-container">
+        <div class="chat-header">
+            <br/>
+            <p id="your-name">Your Name</p>
+        </div>
+
+        <div class="chat-section">
+            <div class="main-wrapper">
+                <div class="chat-content">
+                    <div class="message">
+                        <div class="message-row other-message">
+                            <!-- <div class="message-title">
+                                <span>Example Sender</span>
+                            </div>
+                            <div class="message-text">
+                                <span>Example Text</span>
+                            </div>
+                            <div class="message-time">
+                                December 28
+                            </div> -->
+                        </div>
+                        <div class="message-row you-message">
+                            <!-- <div class="message-title">
+                                <span>Example Receiver</span>
+                            </div>
+                            <div class="message-text">
+                                <span>Example Text</span>
+                            </div>
+                            <div class="message-time">
+                                December 28
+                            </div> -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <form class="msg-tex">
+                    <input type="text" name="msg" id="msg"
+                    placeholder="Type Your Message Here..." autocomplete="off">
+                    <button id="btn-send">
+                        <i class='bx bx-send' ></i>
+                    </button>
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
